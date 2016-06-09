@@ -7,10 +7,10 @@
   "private": true,
   "main": "js/src/index.js",
   "scripts": {
-    "stylus": "stylus -u nib -c -w -o css/master.css stylus/master.styl",
+    "stylus": "stylus -u nib -c -w -o public/css/master.css src/stylus/master.styl",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "watch": "watchify -v -d -t [ reactify --es6 ] js/src/index.js -o js/build/compiled.js",
-    "build": "browserify -t [ reactify --es6 ] js/src/index.js | uglifyjs > js/build/compiled.js"
+    "watch": "watchify -v -d -t [ reactify --es6 ] src/js/index.js -o public/js/compiled.js",
+    "build": "browserify -t [ reactify --es6 ] src/js/index.js | uglifyjs > public/js/compiled.js"
   },
   "dependencies": {
     "react": "^15.1.0",
