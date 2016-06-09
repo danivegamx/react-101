@@ -13,16 +13,16 @@
     "build": "browserify -t [ reactify --es6 ] js/src/index.js | uglifyjs > js/build/compiled.js"
   },
   "dependencies": {
-    "react": "^0.14.0",
-    "underscore": "^1.8.3"
+    "react": "*",
+    "underscore": "*"
   },
   "devDependencies": {
-    "browserify": "^9.0.8",
-    "nib": "^1.1.0",
-    "react-dom": "^0.14.0",
-    "reactify": "^1.1.0",
-    "stylus": "^0.52.4",
-    "uglify-js": "^2.4.20",
-    "watchify": "^3.1.2"
+    "browserify": "*",
+    "nib": "*",
+    "react-dom": "*",
+    "reactify": "*",
+    "stylus": "*",
+    "uglify-js": "*",
+    "watchify": "*"
   }
 }
