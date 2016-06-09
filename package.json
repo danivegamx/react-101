@@ -13,6 +13,7 @@
     "build": "browserify -t [ reactify --es6 ] src/js/index.js | uglifyjs > public/js/compiled.js"
   },
   "dependencies": {
+    "http-server": "^0.9.0",
     "react": "^15.1.0",
     "underscore": "^1.8.3"
   },

@@ -1,26 +1,30 @@
-var React = require('react');
+var React = require('react'),
+	Header = require('./Header'),
+	Title = require('./Title'),
+	Search = require('./Search'),
+	Map = require('./Map'),
+	CurrentLocation = require('./CurrentLocation'),
+	LocationList = require('./LocationList');
 
-// Modo 1
+
 module.exports = React.createClass({
-	getInitialState() {
-		return { myString: "" }
-	},
-	componentWillMount() {
-		var message = this.props.message;
-		this.setState({myString: message});
-	},
+
 	render() {
 		return (
-			<div onClick={this._concatItos}>{this.state.myString}</div>
+			<main>
+				<Header />
+				<Title />
+				<div className="row">
+					<div className="small-8 columns">
+						<Search />
+						<Map />
+					</div>
+					<div className="small-4 columns">
+						<CurrentLocation />
+						<LocationList />
+					</div>
+				</div>
+			</main>
 		);
-	},
-	componentDidMount() {
-		var extra = this.state.myString;
-		extra += " - ";
-		this.setState({myString: extra});
-	},
-	_concatItos(e) {
-		var newString = this.state.myString += " itos"
-		this.setState({myString : newString});
 	}
 });

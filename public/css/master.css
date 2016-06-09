@@ -1,2 +1,3 @@
 @import "thirdparty/normalize.css";
 @import "thirdparty/foundation.min.css";
+body{background:#bdc3c7}header{background:#2980b9;color:#fff;padding:20px 30px}#current-location header{background:#3498db;border-radius:5px 5px 0 0;padding:10px}#current-location article{background:#fff;border-radius:0 0 5px 5px;padding:10px;text-align:center}#title{text-align:center}
