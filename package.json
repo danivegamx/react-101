@@ -13,8 +13,8 @@
     "build": "browserify -t [ reactify --es6 ] js/src/index.js | uglifyjs > js/build/compiled.js"
   },
   "dependencies": {
-    "react": "*",
-    "underscore": "*"
+    "react": "^15.1.0",
+    "underscore": "^1.8.3"
   },
   "devDependencies": {
     "browserify": "*",
